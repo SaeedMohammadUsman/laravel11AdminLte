@@ -45,8 +45,12 @@
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     
-    
-    @yield('content')
+    @section('content')
+    <main class="py-4">
+        @yield('content')
+    </main>
+@endsection
+
   </div>
   <!-- /.content-wrapper -->
   <footer class="main-footer">
