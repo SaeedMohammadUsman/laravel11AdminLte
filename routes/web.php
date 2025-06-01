@@ -20,5 +20,5 @@ require __DIR__ . '/auth.php';
 
 
 Route::get('/test', function () {
-    return view('admin.layouts.app');
+    return view('layouts.app');
 })->name('test');
