@@ -1,0 +1,122 @@
+/* Enable RTL direction globally */
+body.rtl {
+  direction: rtl !important;
+  text-align: right !important;
+}
+
+/* === Layout: Sidebar === */
+body.rtl .main-sidebar {
+  right: 0 !important;
+  left: auto !important;
+  float: right !important;
+}
+
+body.rtl .content-wrapper,
+body.rtl .main-footer,
+body.rtl .main-header {
+  margin-left: 0 !important;
+  margin-right: 250px !important; /* Adjust this to match your sidebar width */
+}
+
+/* === Layout: Brand logo === */
+body.rtl .brand-link {
+  text-align: right !important;
+  padding-right: 1rem !important;
+  padding-left: 0.5rem !important;
+}
+
+/* === Navbar === */
+body.rtl .main-header .navbar-nav {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+  float: left !important;
+}
+
+/* Dropdown toggle icons */
+body.rtl .nav-sidebar .nav-item .right,
+body.rtl .nav-sidebar .nav-item .fas.fa-angle-left {
+  right: auto !important;
+  left: 1rem !important;
+  transform: rotate(180deg); /* Optional: flip arrow direction */
+}
+
+/* Sidebar nav items */
+body.rtl .nav-sidebar > .nav-item > .nav-link {
+  text-align: right !important;
+  padding-left: 1rem !important;
+  padding-right: 2rem !important;
+}
+
+/* Sidebar submenus */
+body.rtl .nav-sidebar .nav-treeview {
+  padding-right: 1rem !important;
+  padding-left: 0 !important;
+}
+
+/* Sidebar badges */
+body.rtl .nav-sidebar .badge {
+  float: left !important;
+}
+
+/* User panel */
+body.rtl .user-panel {
+  text-align: right;
+}
+
+body.rtl .user-panel .image {
+  float: right !important;
+}
+
+body.rtl .user-panel .info {
+  margin-right: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+/* Forms, inputs, etc. */
+body.rtl .form-control,
+body.rtl input,
+body.rtl textarea {
+  text-align: right !important;
+}
+
+/* Breadcrumbs */
+body.rtl .breadcrumb {
+  flex-direction: row-reverse !important;
+}
+
+/* Fix Select2 or other plugin alignment */
+body.rtl .select2-container--default .select2-selection--single {
+  direction: rtl !important;
+  text-align: right;
+}
+
+body.rtl .select2-container--default .select2-selection--multiple {
+  direction: rtl !important;
+}
+
+/* Modal alignment */
+body.rtl .modal-dialog {
+  text-align: right !important;
+}
+
+/* === RTL Navbar Left/Right Swapping === */
+body.rtl .main-header .navbar-nav {
+  float: right !important;
+}
+
+body.rtl .main-header .navbar-nav.ml-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  float: left !important;
+}
+/* Align dropdown menu to left in RTL */
+body.rtl .dropdown-menu-right {
+  left: 0 !important;
+  right: auto !important;
+  text-align: right;
+}
+body.rtl .dropdown-menu-right {
+  right: auto !important;
+  left: 0 !important;
+  text-align: right;
+}

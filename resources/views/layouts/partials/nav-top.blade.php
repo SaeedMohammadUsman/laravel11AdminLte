@@ -41,6 +41,30 @@
       </div>
       </li>
     --}}
+    <li class="nav-item dropdown">
+      <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        id="languageDropdown"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        🌐 {{ app()->getLocale() === 'fa' ? 'فارسی' : 'English' }}
+      </a>
+      <div
+        class="dropdown-menu dropdown-menu-right"
+        aria-labelledby="languageDropdown"
+      >
+        <a class="dropdown-item" href="{{ route('lang.switch', 'en') }}">
+          English
+        </a>
+        <a class="dropdown-item" href="{{ route('lang.switch', 'fa') }}">
+          فارسی
+        </a>
+      </div>
+    </li>
 
     <li class="nav-item dropdown user-menu">
       <a
@@ -55,9 +79,8 @@
           alt="User Image"
         />
         @auth
-           <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
+          <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
         @endauth
-       
       </a>
       <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
         <li class="user-footer">

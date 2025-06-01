@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  @include('layouts.partials.head')
-</head>
-<body class="hold-transition sidebar-mini layout-fixed">
-<div class="wrapper">
 
-  <!-- Navbar -->
-  @include('layouts.partials.nav-top')
-  <!-- /.navbar -->
+<html lang="{{ app()->getLocale() }}" dir="{{ $direction ?? 'ltr' }}">
 
-  <!-- Main Sidebar Container -->
-  @include('layouts.partials.side-nav')
+  <head>
+    @include('layouts.partials.head')
+  </head>
+ <body class="hold-transition sidebar-mini layout-fixed {{ $direction === 'rtl' ? 'rtl' : '' }}">
 
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    
-    @section('content')
-    <main class="py-4">
-        @yield('content')
-    </main>
-@endsection
+    <div class="wrapper">
+      <!-- Navbar -->
+      @include('layouts.partials.nav-top')
+      <!-- /.navbar -->
 
-  </div>
+      <!-- Main Sidebar Container -->
+      @include('layouts.partials.side-nav')
 
-  @include('layouts.partials.footer')
+      <!-- Content Wrapper. Contains page content -->
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <main class="py-4">
+          @yield('content')
+        </main>
+      </div>
 
-</div>
-<!-- ./wrapper -->
+      @include('layouts.partials.footer')
+    </div>
+    <!-- ./wrapper -->
 
-
-@include('layouts.partials.scripts')
-</body>
+    @include('layouts.partials.scripts')
+  </body>
 </html>

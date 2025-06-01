@@ -23,3 +23,10 @@
   <link rel="stylesheet" href="{{ asset('admin/plugins/daterangepicker/daterangepicker.css') }}" >
   <!-- summernote -->
   <link rel="stylesheet" href="{{ asset('admin/plugins/summernote/summernote-bs4.min.css') }}" >
+  
+  <!-- Custom styles -->
+@if (session('locale') === 'fa' && ($direction ?? 'ltr') === 'rtl')
+    <link rel="stylesheet" href="{{ asset('Admin/dist/css/adminlte-rtl.css') }}">
+@endif
+
+  <link rel="stylesheet" href="{{ asset('admin/dist/css/custom-rtl.css') }}">
