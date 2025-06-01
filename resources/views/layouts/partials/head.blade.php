@@ -30,3 +30,24 @@
 @endif
 
   <link rel="stylesheet" href="{{ asset('admin/dist/css/custom-rtl.css') }}">
+
+
+@if (session('success'))
+    <meta name="swal-success" content="{{ session('success') }}">
+@endif
+
+@if (session('error'))
+    <meta name="swal-error" content="{{ session('error') }}">
+@endif
+<meta name="swal-success" content="Test success flash message!">
+
+<script>
+    window.translations = {
+        swalSuccessTitle: "{{ __('sweetalert.success_title') }}",
+        swalErrorTitle: "{{ __('sweetalert.error_title') }}",
+        swalDeleteTitle: "{{ __('sweetalert.delete_title') }}",
+        swalDeleteText: "{{ __('sweetalert.delete_text') }}",
+        swalDeleteConfirm: "{{ __('sweetalert.delete_confirm') }}",
+        swalDeleteCancel: "{{ __('sweetalert.cancel_button') }}",
+    };
+</script>

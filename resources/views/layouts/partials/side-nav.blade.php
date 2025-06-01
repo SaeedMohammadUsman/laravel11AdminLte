@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  <a href="index3.html" class="brand-link">
+  <a href="{{ route('home') }}" class="brand-link">
     <img
       src="{{ asset('img/logo.png') }}"
       alt="eb Logo"
@@ -22,7 +22,7 @@
         />
       </div>
       <div class="info">
-        <a href="#" class="d-block">
+        <a href="{{ route('home') }}" class="d-block">
           @if (Auth::check())
             <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
           @endif

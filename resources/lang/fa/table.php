@@ -1,0 +1,20 @@
+<?php return [
+    'name' => 'نام',
+    'status' => 'وضعیت',
+    'created_at' => 'تاریخ ایجاد',
+    'actions' => 'عملیات',
+    'active' => 'فعال',
+    'inactive' => 'غیرفعال',
+    'no_departments_found' => 'هیچ دیپارتمنتی یافت نشد.',
+    'confirm_delete' => 'آیا مطمئن هستید که می‌خواهید این رکورد را حذف کنید؟',
+    'delete_success' => 'رکورد با موفقیت حذف شد.',
+
+    'province' => 'ولایت',
+    'center' => 'مرکز',
+    'no_districts_found' => 'هیچ ولسوالی‌ای یافت نشد.',
+    'no_positions_types_found' => 'هیچ نوع موقعیتی یافت نشد.',
+    'no_position_titles_found' => 'هیچ عنوان موقعیتی یافت نشد.',
+    'no_records_found' => 'هیچ رکوردی یافت نشد.',
+    'description' => 'توضیحات',
+    'position_type' => 'نوع موقعیت',
+];
